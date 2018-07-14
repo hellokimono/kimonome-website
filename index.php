@@ -397,9 +397,6 @@ if (have_rows('content_block')):
                                 </div>
                                 <div class="section_contacts__info__numbers">
                                     <span>T <?php the_sub_field('tel'); ?></span>
-                                    <br>
-                                    <span>F <?php the_sub_field('fax'); ?></span>
-
                                 </div>
                                 <div class="section_contacts__info__share">
                                     <span>Share via</span> <a href="#">facebook</a> <a href="#">twitter</a> <a href="#">email</a>
