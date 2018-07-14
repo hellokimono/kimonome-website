@@ -399,7 +399,7 @@ if (have_rows('content_block')):
                                     <span>T <?php the_sub_field('tel'); ?></span>
                                 </div>
                                 <div class="section_contacts__info__share">
-                                    <span>Share via</span> <a href="#">facebook</a> <a href="#">twitter</a> <a href="#">email</a>
+                                    <span>Share via</span> <a href="http://www.facebook.com/kimonodotme/">facebook</a> <a href="http://twitter.com/hellokimono">twitter</a> <a href="http://www.linkedin.com/company/kimonodotme/">linkedin</a> <a href="http://www.instagram.com/hellokimono/">instagram</a>
                                 </div>
                                 <div class="section_contacts__info__copyright">
                                     <?php the_sub_field('copyright'); ?>
