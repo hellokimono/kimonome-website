@@ -38,20 +38,22 @@ function backgroundMove() {
     var header__line = $('.header__line');
     var section_contacts__logo = $('.section_contacts__logo .section_contacts__logo__background');
     $(window).mousemove(function (e) {
-        element.css('background-position-x', (e.pageX) / 7 + 'px');
-        element.css('background-position-y', (e.pageY) / 7 + 'px');
-
-        line_block.css('background-position-x', (e.pageX) / 7 + 'px');
-
-        circle_block.css('background-position-x', (e.pageX) / 7 + 'px');
-        circle_block.css('background-position-y', (e.pageY) / 7 + 'px');
-
-
-        header__line.css('background-position-x', 300 + (e.pageX) / 7 + 'px');
-        header__line.css('background-position-y', 300 + (e.pageY) / 7 + 'px');
-        section_contacts__logo.css('background-position-x', (e.pageX) / 7 + 'px');
-        section_contacts__logo.css('background-position-y', (e.pageY) / 7 + 'px');
-
+        var slowDownFactor = 14;
+        var headerLineTreshold = 300;
+        
+        element.css('background-position-x', (e.pageX) / slowDownFactor + 'px');
+        element.css('background-position-y', (e.pageY) / slowDownFactor + 'px');
+        
+        line_block.css('background-position-x', (e.pageX) / slowDownFactor + 'px');
+        
+        circle_block.css('background-position-x', (e.pageX) / slowDownFactor + 'px');
+        circle_block.css('background-position-y', (e.pageY) / slowDownFactor + 'px');
+        
+        
+        header__line.css('background-position-x', headerLineTreshold + (e.pageX) / slowDownFactor + 'px');
+        header__line.css('background-position-y', headerLineTreshold + (e.pageY) / slowDownFactor + 'px');
+        section_contacts__logo.css('background-position-x', (e.pageX) / slowDownFactor + 'px');
+        section_contacts__logo.css('background-position-y', (e.pageY) / slowDownFactor + 'px');
     })
 }
 
