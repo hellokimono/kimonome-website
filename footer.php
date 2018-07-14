@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="footer__text">
-                    <p>Marvelous Engineering<sup>TM</sup></p>
+                    <p>Marvelously Engineered<sup>TM</sup></p>
                 </div>
             </div>
         </div>
