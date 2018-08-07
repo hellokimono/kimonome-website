@@ -21,6 +21,17 @@ wp_head();
     <meta property="og:description" content="Kimono is the best way to establish your digital identity on the blockchain and control how and when personal information about you is revealed." />
 </head>
 <body>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "url": "https://kimono.me",
+  "address": "15 N Chenevert Street #512 Houston, Texas 77002",
+  "email": "hello@kimono.me",
+  "legalName": "kimono.me, Inc.",
+  "telephone": "(713) 419-9810‬"
+}
+</script>
 <header class="sticky-top">
 
     <div class="container-fluid">
