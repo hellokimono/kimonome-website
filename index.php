@@ -308,7 +308,7 @@ if (have_rows('content_block')):
                             <div class="section_contacts__logo">
                                 <!--                                <img src="--><?php //the_sub_field('logo');
                                 ?><!--" alt="">-->
-                                <div class="section_contacts__logo__img" style="max-height: 281.594px; max-width: 320px;">
+                                <div class="section_contacts__logo__img">
                                     <img src="<?php echo get_template_directory_uri()?>/assets/img/contacts-logo.svg" alt="kimono logo">
                                     <div class="section_contacts__logo__background"></div>
                                 </div>
@@ -320,7 +320,8 @@ if (have_rows('content_block')):
                         <div class="col-xl-8 col-lg-8 col-md-8 col-md-8">
                             <div class="section_contacts__info">
                                 <div class="section_contacts__info__address">
-                                    <?php the_sub_field('address'); ?>
+                                    <span class="rwd-line">15 N Chenevert Street #512 </span>
+                                    <span class="rwd-line">Houston, Texas 77002</span>
                                 </div>
                                 <div class="section_contacts__info__numbers">
                                     <span>T <?php the_sub_field('tel'); ?></span>

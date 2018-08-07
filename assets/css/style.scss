@@ -737,6 +737,7 @@ main {
       .section_contacts__logo__img {
         text-align: center;
         margin: 0 auto;
+        display: inline-block;
         .section_contacts__logo__background {
           background-image: url("../img/background-min.png");
           background-attachment: fixed;
@@ -1675,6 +1676,16 @@ footer {
     }
   }
 
+}
+
+.rwd-line {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .rwd-line {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 1400px) {

@@ -486,7 +486,9 @@ main {
     position: relative; }
     main .section_contacts .section_contacts__logo .section_contacts__logo__img {
       text-align: center;
-      margin: 0 auto; }
+			margin: 0 auto;
+			display: inline-block;
+		}
       main .section_contacts .section_contacts__logo .section_contacts__logo__img .section_contacts__logo__background {
         background-image: url("../img/background-min.png");
         background-attachment: fixed;
@@ -538,7 +540,15 @@ footer {
       footer .footer__text p sup {
         font-size: 60%;
         letter-spacing: 11px; }
+.rwd-line {
+	display: block;
+}
 
+@media screen and (min-width: 1200px) {
+	.rwd-line {
+		display: inline;
+	}
+}
 @media (min-width: 2000px) {
   .container {
     max-width: 2000px; } }
