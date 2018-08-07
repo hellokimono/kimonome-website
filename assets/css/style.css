@@ -21,6 +21,10 @@ svg {
   max-width: 100%;
   height: auto; }
 
+.kimono_logo {
+	height: 53px;
+}
+
 body {
   font-family: "ChaletLondonNineteenSixty-Regular";
   color: #00112d;

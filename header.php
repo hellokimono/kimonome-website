@@ -22,7 +22,7 @@ wp_head();
                     //                    the_custom_logo('full');
                     ?>
                     <a class="custom-logo-link" href="#">
-                    <img src="<?php echo get_template_directory_uri()?>/assets/img/header-logo.svg" alt="kimono logo">
+                    <img class="kimono_logo" src="<?php echo get_template_directory_uri()?>/assets/img/header-logo.svg" alt="kimono logo">
 
                     </a>
 
