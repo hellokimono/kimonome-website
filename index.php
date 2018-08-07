@@ -330,7 +330,8 @@ if (have_rows('content_block')):
                                     <span>Share via</span> <a href="http://www.facebook.com/kimonodotme/">facebook</a> <a href="http://twitter.com/hellokimono">twitter</a> <a href="http://www.linkedin.com/company/kimonodotme/">linkedin</a> <a href="http://www.instagram.com/hellokimono/">instagram</a>
                                 </div>
                                 <div class="section_contacts__info__copyright">
-                                    <?php the_sub_field('copyright'); ?>
+                                    <span class="rwd-line">© 2018 Kimono.me, Inc.</span>
+                                    <span class="rwd-line">All rights reserved.</span>
                                 </div>
 
                             </div>
