@@ -6,8 +6,19 @@ wp_head();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Kimono is the best way to establish your digital identity on the blockchain and control how and when personal information about you is revealed.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><?php echo wp_get_document_title(); ?></title>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="Kimono is the best way to establish your digital identity on the blockchain and control how and when personal information about you is revealed.">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="kimono.me" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://kimono.me/" />
+    <meta property="og:image" content="https://kimono.me/wp-content/themes/kimono/assets/img/header-logo.svg" />
+    <meta property="og:description" content="Kimono is the best way to establish your digital identity on the blockchain and control how and when personal information about you is revealed." />
 </head>
 <body>
 <header class="sticky-top">
