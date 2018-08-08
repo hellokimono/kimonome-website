@@ -21,6 +21,10 @@ svg {
   max-width: 100%;
   height: auto; }
 
+.kimono_logo {
+	height: 30px;
+}
+
 body {
   font-family: "ChaletLondonNineteenSixty-Regular";
   color: #00112d;
@@ -482,7 +486,9 @@ main {
     position: relative; }
     main .section_contacts .section_contacts__logo .section_contacts__logo__img {
       text-align: center;
-      margin: 0 auto; }
+			margin: 0 auto;
+			display: inline-block;
+		}
       main .section_contacts .section_contacts__logo .section_contacts__logo__img .section_contacts__logo__background {
         background-image: url("../img/background-min.png");
         background-attachment: fixed;
@@ -491,9 +497,8 @@ main {
         bottom: 0;
         left: 0;
         right: 0;
-        transform: scale(0.7, 0.9);
-        height: 99%;
-        max-width: 90%; }
+        transform: scale(0.8, 0.9);
+        height: 60px;}
     main .section_contacts .section_contacts__logo img, main .section_contacts .section_contacts__logo svg, main .section_contacts .section_contacts__logo .section_contacts__logo__img {
       z-index: 2;
       position: relative; }
@@ -535,7 +540,15 @@ footer {
       footer .footer__text p sup {
         font-size: 60%;
         letter-spacing: 11px; }
+.rwd-line {
+	display: block;
+}
 
+@media screen and (min-width: 1200px) {
+	.rwd-line {
+		display: inline;
+	}
+}
 @media (min-width: 2000px) {
   .container {
     max-width: 2000px; } }
@@ -913,6 +926,10 @@ footer {
   main .section_how .section_how__text {
     padding-top: 0; } }
 @media screen and (max-width: 680px) {
+	.kimono_logo {
+		height: 20px;
+	}
+
   body, .header__line, .section_what__image__background, .line_block, .line_block, main .section_contacts .section_contacts__logo .section_contacts__logo__img .section_contacts__logo__background, .section_why__slider_wrapper__next, .section_how__slider_wrapper__next {
     background-attachment: scroll !important; }
 
@@ -964,7 +981,7 @@ footer {
       margin-bottom: 35px; }
       main .section_what .section_what__text .section_what__text__text p {
         font-size: 14px;
-        line-height: 1;
+        line-height: 1.3;
         margin-bottom: 25px; }
     main .section_what .section_what__text .section_what__text__btn {
       font-size: 14px;
@@ -998,7 +1015,7 @@ footer {
             line-height: 53px; }
           main .section_why .section_why__slider_wrapper .section_why__slider_wrapper__slider .slide_wrapper .section_why__slider_wrapper__slider__slide .section_why__slider_wrapper__slider__slide__text p {
             font-size: 14px;
-            line-height: 1;
+            line-height: 1.3;
             margin-bottom: 25px; }
           main .section_why .section_why__slider_wrapper .section_why__slider_wrapper__slider .slide_wrapper .section_why__slider_wrapper__slider__slide .section_why__slider_wrapper__slider__slide__link a {
             font-size: 14px; }
@@ -1024,7 +1041,7 @@ footer {
         margin-bottom: 15px; }
         main .section_how .section_how__slider_wrapper .section_how__slider_wrapper__slider .section_how__slider_wrapper__slider__slide .section_how__slider_wrapper__slider__slide__text p {
           font-size: 14px;
-          line-height: 1;
+          line-height: 1.3;
           margin-bottom: 18px; }
       main .section_how .section_how__slider_wrapper .section_how__slider_wrapper__slider .section_how__slider_wrapper__slider__slide .section_how__slider_wrapper__slider__slide__link a {
         font-size: 14px;
@@ -1050,7 +1067,7 @@ footer {
         margin-bottom: 20px; }
       main .section_hello .section_hello__text .section_hello__text__sub_title {
         font-size: 14px;
-        line-height: 1; }
+        line-height: 1.3; }
     main .section_hello .section_hello__form .wpcf7 form .wpcf7-form-control-wrap {
       width: 60%; }
     main .section_hello .section_hello__form .wpcf7 form div.wpcf7-validation-errors {

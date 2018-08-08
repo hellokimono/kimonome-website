@@ -712,6 +712,10 @@ main {
 
   }
 
+  .kimono_logo {
+    height: 30px;
+  }
+
   .section_contacts {
 
     .row {
@@ -733,6 +737,7 @@ main {
       .section_contacts__logo__img {
         text-align: center;
         margin: 0 auto;
+        display: inline-block;
         .section_contacts__logo__background {
           background-image: url("../img/background-min.png");
           background-attachment: fixed;
@@ -741,9 +746,8 @@ main {
           bottom: 0;
           left: 0;
           right: 0;
-          transform: scale(0.7, 0.9);
-          height: 99%;
-          max-width: 90%;
+          transform: scale(0.8, 0.9);
+          height: 60px;
         }
       }
       img, svg, .section_contacts__logo__img {
@@ -1672,6 +1676,16 @@ footer {
     }
   }
 
+}
+
+.rwd-line {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .rwd-line {
+    display: inline;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -2724,7 +2738,11 @@ footer {
   $subtitlelh: 53px;
 
   $tetfz: 14px;
-  $textlh: 1;
+  $textlh: 1.3;
+
+  .kimono_logo {
+    height: 20px;
+  }
 
   body, .header__line, .section_what__image__background, .line_block, .line_block, main .section_contacts .section_contacts__logo .section_contacts__logo__img .section_contacts__logo__background, .section_why__slider_wrapper__next, .section_how__slider_wrapper__next {
     background-attachment: scroll !important;
