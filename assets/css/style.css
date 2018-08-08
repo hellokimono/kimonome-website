@@ -926,6 +926,10 @@ footer {
   main .section_how .section_how__text {
     padding-top: 0; } }
 @media screen and (max-width: 680px) {
+	.kimono_logo {
+		height: 20px;
+	}
+
   body, .header__line, .section_what__image__background, .line_block, .line_block, main .section_contacts .section_contacts__logo .section_contacts__logo__img .section_contacts__logo__background, .section_why__slider_wrapper__next, .section_how__slider_wrapper__next {
     background-attachment: scroll !important; }
 
