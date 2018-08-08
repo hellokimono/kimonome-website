@@ -309,7 +309,7 @@ if (have_rows('content_block')):
                                 <!--                                <img src="--><?php //the_sub_field('logo');
                                 ?><!--" alt="">-->
                                 <div class="section_contacts__logo__img">
-                                    <img src="<?php echo get_template_directory_uri()?>/assets/img/contacts-logo.svg" alt="kimono logo">
+                                    <img src="<?php echo get_template_directory_uri()?>/assets/img/kimono-logo-footer.svg" alt="kimono logo">
                                     <div class="section_contacts__logo__background"></div>
                                 </div>
 
