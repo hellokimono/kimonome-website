@@ -7,9 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist/js"),
     filename: "bundle.js"
   },
-  optimization: {
-    minimize: false
-  },
+
   plugins: [
     new CopyWebpackPlugin([
       { from: "*.php", to: ".." },

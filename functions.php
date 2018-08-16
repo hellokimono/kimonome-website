@@ -4,10 +4,6 @@
  */
 function KimonoTheme()
 {
-    wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri() . '/assets/js/jquery-2.2.4.min.js');
-    wp_enqueue_script('jquery');
-
     wp_enqueue_style(
         'normalize',
         get_template_directory_uri() . "/assets/css/normalize.css",
@@ -41,24 +37,8 @@ function KimonoTheme()
     );
 
     wp_enqueue_script(
-        'bootstrap',
-        get_template_directory_uri() . '/assets/js/bootstrap.min.js',
-        array(),
-        '2.2.8',
-        'true'
-    );
-    wp_enqueue_script(
-        'slick',
-        get_template_directory_uri() . '/assets/js/slick.min.js',
-        array(),
-        '2.2.8',
-        'true'
-    );
-
-
-    wp_enqueue_script(
         'main',
-        get_template_directory_uri() . '/assets/js/main.js',
+        get_template_directory_uri() . '/dist/js/bundle.js',
         array(),
         '2.28',
         'false'

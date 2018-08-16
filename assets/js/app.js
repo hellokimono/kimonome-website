@@ -1,4 +1,4 @@
-import "jquery";
+import "./global";
 import "bootstrap";
 import "slick-carousel";
-import "./main.js";
+import "./main";
