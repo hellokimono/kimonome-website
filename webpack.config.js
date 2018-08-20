@@ -1,40 +1,31 @@
 const path = require("path");
+const distFolder = path.resolve(__dirname, "dist");
+
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 module.exports = {
-  entry: "./assets/js/app.js",
+  entry: ["./assets/js/app.js", "./assets/css/app.scss"],
   output: {
-    path: path.resolve(__dirname, "dist/js"),
+    path: `${distFolder}/js`,
     filename: "bundle.js"
   },
-
   plugins: [
     new CopyWebpackPlugin([
       { from: "*.php", to: ".." },
       { from: "style.css", to: ".." }
-    ])
+    ]),
+    new MiniCssExtractPlugin({
+      filename: `../css/bundle.min.css`
+    })
+    //new OptimizeCSSAssetsPlugin({})
   ],
   module: {
     rules: [
       {
         test: /.scss$/,
-        use: [
-          //   {
-          //     loader: "file-loader",
-          //     options: {
-          //       name: "[name].css",
-          //       outputPath: "../css/"
-          //     }
-          //   },
-          { loader: "style-loader/url" },
-          {
-            loader: "css-loader"
-          },
-
-          {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
-        ]
+        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       },
       {
         test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
