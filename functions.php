@@ -4,7 +4,6 @@
  */
 function KimonoTheme()
 {
-
     wp_enqueue_style(
         'font-awesome',
         "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
@@ -12,21 +11,13 @@ function KimonoTheme()
         '4.7.0'
     );
 
-    wp_enqueue_style(
-        'main',
-        get_template_directory_uri() . "/dist/css/bundle.min.css",
-        array(),
-        '2.28'
-    );
+    $cssFilePath = glob( get_template_directory() . '/css/bundle.min.*' );
+    $cssFileURI = get_template_directory_uri() . '/css/' . basename($cssFilePath[0]);
+    wp_enqueue_style( 'main', $cssFileURI);
 
-    wp_enqueue_script(
-        'main',
-        get_template_directory_uri() . '/dist/js/bundle.js',
-        array(),
-        '2.28',
-        'false'
-    );
-
+    $jsFilePath = glob( get_template_directory() . '/js/bundle.min.*' );
+    $jsFileURI = get_template_directory_uri() . '/js/' . basename($jsFilePath[0]);
+    wp_enqueue_script( 'main', $jsFileURI , null , null , true );
 }
 
 add_action('wp_enqueue_scripts', 'KimonoTheme');

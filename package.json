@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kimonome/kimonome-website#readme",
   "devDependencies": {
     "bootstrap": "^4.1.3",
+    "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
     "file-loader": "^1.1.11",

@@ -500,25 +500,11 @@ main {
       .section_how__slider_wrapper__slider {
         padding-top: $sectiontoppad;
         padding-bottom: $sectionbotpad;
-
-        .slick-track {
-          //display: -webkit-box;
-          //display: -ms-flexbox;
-          //display: flex;
-          //-ms-flex-wrap: wrap;
-          //flex-wrap: wrap;
-          //-webkit-align-items: center;
-          //-webkit-box-align: center;
-          //-ms-flex-align: center;
-          //align-items: center;
-        }
-
         .slick-prev {
           display: none !important;
         }
 
         .section_how__slider_wrapper__slider__slide {
-          //max-width: 880px;
           height: auto;
           padding: 0 10px;
 
@@ -718,9 +704,6 @@ main {
       img,
       svg,
       .section_contacts__logo__img {
-        //background-image: url("../img/background-min.png");
-        //background-attachment: fixed;
-        //background-size: 170px;
         z-index: 2;
         position: relative;
       }
