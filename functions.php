@@ -4,18 +4,7 @@
  */
 function KimonoTheme()
 {
-    wp_enqueue_style(
-        'normalize',
-        get_template_directory_uri() . "/assets/css/normalize.css",
-        array(),
-        '2.28'
-    );
-    wp_enqueue_style(
-        'bootstrap',
-        get_template_directory_uri() . "/assets/css/bootstrap.min.css",
-        array(),
-        '4.7.0'
-    );
+
     wp_enqueue_style(
         'font-awesome',
         "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
@@ -24,14 +13,8 @@ function KimonoTheme()
     );
 
     wp_enqueue_style(
-        'slick',
-        get_template_directory_uri() . "/assets/css/slick.css",
-        array(),
-        '2.28'
-    );
-    wp_enqueue_style(
         'main',
-        get_template_directory_uri() . "/assets/css/style.css",
+        get_template_directory_uri() . "/dist/css/bundle.min.css",
         array(),
         '2.28'
     );
